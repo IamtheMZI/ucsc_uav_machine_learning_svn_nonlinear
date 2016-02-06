@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( SVN_Nonlinear )
+find_package( OpenCV REQUIRED )
+add_executable( bin/SVN_Nonlinear src/SVN_Nonlinear_rng.cpp )
+target_link_libraries( bin/SVN_Nonlinear ${OpenCV_LIBS} )
